@@ -25,9 +25,7 @@ end
 
 
 
-def turn(board)
-  turn_num = 0
-
+def turn(board, turn_num)
   while turn_num < 10
     puts "Please enter 1-9:"
     input = gets.strip
@@ -44,5 +42,6 @@ end
 
 # Define your play method below
 def play(board)
-  turn(board)
+  turn_num = 0
+  turn(board, turn_num)
 end
